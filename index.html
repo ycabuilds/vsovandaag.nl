@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VSO laten controleren — Gratis advies dezelfde dag | VSOvandaag.nl</title>
+  <meta name="description" content="Teken niet direct. Laat je VSO vandaag nog controleren door mr. Mehtap Haphap. Gratis — werkgever betaalt. Dezelfde dag reactie.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== DESIGN TOKENS ===== */
+    :root {
+      --color-bg-page:        #FAFAF7;
+      --color-bg-card:        #FFFFFF;
+      --color-bg-dark:        #1C3A2F;
+      --color-bg-darkest:     #162E24;
+      --color-primary:        #1C3A2F;
+      --color-primary-light:  #2D5A45;
+      --color-primary-muted:  #3D6B54;
+      --color-accent:         #D4A853;
+      --color-accent-hover:   #C49640;
+      --color-accent-light:   #F5E8C8;
+      --color-text-primary:   #1A1A18;
+      --color-text-secondary: #4A4A42;
+      --color-text-tertiary:  #7A7A70;
+      --color-text-inverse:   #FAFAF7;
+      --color-border:         #E8E5DC;
+      --color-border-focus:   #2D5A45;
+      --color-danger:         #DC2626;
+      --color-danger-bg:      #FEF2F2;
+      --color-warning-color:  #D97706;
+      --color-warning-bg:     #FFFBEB;
+      --color-caution-color:  #CA8A04;
+      --color-caution-bg:     #FEFCE8;
+      --color-success:        #22543D;
+      --color-success-bg:     #D1FAE5;
+      --color-whatsapp:       #25D366;
+      --color-whatsapp-hover: #1EAD55;
+
+      --shadow-card: 0 1px 3px rgba(28,58,47,0.04), 0 6px 16px rgba(28,58,47,0.06), 0 24px 48px rgba(28,58,47,0.06);
+      --shadow-form: 0 2px 8px rgba(28,58,47,0.08), 0 16px 40px rgba(28,58,47,0.12);
+      --shadow-sm:   0 1px 4px rgba(28,58,47,0.08);
+
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, -apple-system, sans-serif;
+
+      --text-xs:   0.75rem;
+      --text-sm:   0.875rem;
+      --text-base: 1.0625rem;
+      --text-lg:   1.25rem;
+      --text-xl:   1.5rem;
+      --text-2xl:  clamp(1.75rem, 3.5vw, 2.5rem);
+      --text-h1:   clamp(2.4rem, 5vw, 3.75rem);
+
+      --leading-tight:  1.1;
+      --leading-snug:   1.3;
+      --leading-normal: 1.7;
+      --tracking-wide:  0.08em;
+
+      --space-1: 0.25rem;  --space-2: 0.5rem;   --space-3: 0.75rem;
+      --space-4: 1rem;     --space-5: 1.25rem;  --space-6: 1.5rem;
+      --space-8: 2rem;     --space-10: 2.5rem;  --space-12: 3rem;
+      --space-16: 4rem;
+
+      --section-y: clamp(4rem, 10vw, 7rem);
+      --container-max:    1200px;
+      --container-narrow: 760px;
+      --container-pad:    clamp(1rem, 4vw, 2rem);
+
+      --radius-sm:   4px;
+      --radius-md:   8px;
+      --radius-lg:   12px;
+      --radius-xl:   16px;
+      --radius-2xl:  24px;
+      --radius-pill: 100px;
+
+      --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
+      --ease-in-out:    cubic-bezier(0.4, 0, 0.2, 1);
+      --dur-fast:  160ms;
+      --dur-base:  300ms;
+      --dur-slow:  600ms;
+    }
+
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: var(--leading-normal);
+      color: var(--color-text-secondary);
+      background: var(--color-bg-page);
+      -webkit-font-smoothing: antialiased;
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; }
+    ul { list-style: none; }
+    button { font-family: inherit; }
+
+    /* ===== UTILITIES ===== */
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding-left: var(--container-pad);
+      padding-right: var(--container-pad);
+    }
+    .container--narrow { max-width: var(--container-narrow); }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    /* ===== SECTIONS ===== */
+    .section { padding: var(--section-y) 0; }
+    .section--cream { background: var(--color-bg-page); }
+    .section--white { background: var(--color-bg-card); }
+    .section--dark  { background: var(--color-bg-dark); color: var(--color-text-inverse); }
+
+    .section__header { margin-bottom: var(--space-10); }
+    .section__header--center { text-align: center; }
+    .section__eyebrow {
+      display: inline-block;
+      font-size: var(--text-xs); font-weight: 700;
+      text-transform: uppercase; letter-spacing: var(--tracking-wide);
+      color: var(--color-accent); margin-bottom: var(--space-3);
+    }
+    .section--white .section__eyebrow { color: var(--color-primary-muted); }
+    .section--dark  .section__eyebrow { color: var(--color-accent); }
+    .section__title {
+      font-family: var(--font-display); font-size: var(--text-2xl);
+      font-weight: 700; color: var(--color-text-primary);
+      line-height: var(--leading-snug); margin-bottom: var(--space-4);
+    }
+    .section--dark .section__title { color: var(--color-text-inverse); }
+    .section__subtitle {
+      font-size: var(--text-base); color: var(--color-text-secondary); max-width: 56ch;
+    }
+    .section__header--center .section__subtitle { margin: 0 auto; }
+    .section--dark .section__subtitle { color: rgba(250,250,247,0.7); }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: 0.875rem 1.75rem;
+      font-family: var(--font-body); font-size: var(--text-base);
+      font-weight: 600; line-height: 1; text-decoration: none;
+      border: 2px solid transparent; border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: background-color var(--dur-fast) ease,
+                  border-color var(--dur-fast) ease,
+                  box-shadow var(--dur-fast) ease,
+                  transform var(--dur-fast) ease;
+      min-height: 44px; white-space: nowrap;
+    }
+    .btn--accent {
+      background: var(--color-accent); color: var(--color-text-primary);
+      border-color: var(--color-accent);
+    }
+    .btn--accent:hover, .btn--accent:focus-visible {
+      background: var(--color-accent-hover); border-color: var(--color-accent-hover);
+      box-shadow: 0 0 0 4px rgba(212,168,83,0.25); transform: scale(1.02);
+    }
+    .btn--primary {
+      background: var(--color-primary); color: var(--color-text-inverse);
+      border-color: var(--color-primary);
+    }
+    .btn--primary:hover {
+      background: var(--color-primary-light); border-color: var(--color-primary-light);
+      transform: scale(1.02);
+    }
+    .btn--whatsapp {
+      background: var(--color-whatsapp); color: #fff;
+      border-color: var(--color-whatsapp);
+    }
+    .btn--whatsapp:hover {
+      background: var(--color-whatsapp-hover); border-color: var(--color-whatsapp-hover);
+      transform: scale(1.02);
+    }
+    .btn--sm  { padding: 0.5rem 1rem; font-size: var(--text-sm); min-height: 36px; }
+    .btn--lg  { padding: 1.125rem 2.25rem; font-size: 1.0625rem; }
+    .btn--full { width: 100%; }
+    .btn:focus-visible { outline: 2px solid var(--color-border-focus); outline-offset: 3px; }
+
+    /* ===== HEADER ===== */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: 64px;
+      background: transparent;
+      transition: background var(--dur-base) ease,
+                  box-shadow var(--dur-base) ease,
+                  border-bottom var(--dur-base) ease;
+    }
+    .header--scrolled {
+      background: rgba(250,250,247,0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+    }
+    .header__inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .header__logo {
+      font-family: var(--font-display); font-size: 1.375rem; font-weight: 700;
+      color: var(--color-text-primary); text-decoration: none; letter-spacing: -0.01em;
+    }
+    .header__logo-accent { color: var(--color-accent); }
+    .header__logo-tld   { color: var(--color-text-tertiary); font-weight: 600; }
+    .header__actions { display: flex; align-items: center; gap: var(--space-3); }
+    .header__phone {
+      display: flex; align-items: center; gap: var(--space-2);
+      color: var(--color-text-primary); text-decoration: none;
+      font-size: var(--text-sm); font-weight: 600;
+      padding: var(--space-2) var(--space-3); border-radius: var(--radius-md);
+      transition: color var(--dur-fast) ease; min-height: 44px;
+    }
+    .header__phone:hover { color: var(--color-primary); }
+    @media (max-width: 479px) { .header__phone-number { display: none; } }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding-top: calc(64px + 3rem);
+      padding-bottom: var(--section-y);
+      background: var(--color-bg-page);
+    }
+    .hero__grid {
+      display: grid; grid-template-columns: 1fr; gap: var(--space-10);
+    }
+    @media (min-width: 1024px) {
+      .hero__grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: var(--space-16); align-items: start;
+      }
+    }
+    .hero__eyebrow {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      background: var(--color-accent-light); color: var(--color-primary);
+      font-size: var(--text-sm); font-weight: 600;
+      padding: var(--space-2) var(--space-4); border-radius: var(--radius-pill);
+      margin-bottom: var(--space-6);
+    }
+    .hero__eyebrow-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--color-accent); flex-shrink: 0;
+    }
+    .hero__title {
+      font-family: var(--font-display); font-size: var(--text-h1);
+      font-weight: 700; color: var(--color-text-primary);
+      line-height: var(--leading-tight); letter-spacing: -0.02em;
+      margin-bottom: var(--space-5);
+    }
+    .hero__title-line2 { color: var(--color-primary); }
+    .hero__title-br { display: none; }
+    @media (min-width: 480px) { .hero__title-br { display: inline; } }
+    .hero__subtitle {
+      font-size: var(--text-lg); color: var(--color-text-secondary);
+      line-height: 1.6; margin-bottom: var(--space-6); max-width: 52ch;
+    }
+    .hero__benefits {
+      display: flex; flex-direction: column; gap: var(--space-3);
+      margin-bottom: var(--space-6);
+    }
+    .hero__benefit {
+      display: flex; align-items: flex-start; gap: var(--space-3);
+      font-size: var(--text-base); color: var(--color-text-secondary);
+    }
+    .hero__check { flex-shrink: 0; margin-top: 2px; }
+    .hero__contact-row {
+      display: flex; align-items: center; gap: var(--space-4);
+      flex-wrap: wrap; margin-bottom: var(--space-5);
+    }
+    .hero__contact-link {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      font-weight: 600; font-size: var(--text-sm);
+      color: var(--color-primary); text-decoration: none;
+    }
+    .hero__contact-link:hover { color: var(--color-primary-light); text-decoration: underline; }
+    .hero__contact-link--wa { color: var(--color-whatsapp-hover); }
+    .hero__contact-or { color: var(--color-text-tertiary); font-size: var(--text-sm); }
+    .hero__urgency {
+      display: flex; align-items: center; gap: var(--space-2);
+      font-size: var(--text-sm); color: var(--color-text-tertiary);
+    }
+    .hero__urgency strong { color: var(--color-text-secondary); }
+
+    /* Hero form card */
+    .hero__form-wrapper { position: relative; }
+    .hero__form-card {
+      background: var(--color-bg-card); border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-form); padding: var(--space-8);
+      position: relative; overflow: hidden;
+      animation: slideInRight 0.6s var(--ease-out-cubic) 0.2s both;
+    }
+    .hero__form-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 4px; background: var(--color-primary);
+    }
+    .hero__form-title {
+      font-family: var(--font-display); font-size: 1.375rem; font-weight: 700;
+      color: var(--color-text-primary); margin-bottom: var(--space-1);
+    }
+    .hero__form-subtitle {
+      font-size: var(--text-sm); color: var(--color-text-tertiary);
+      margin-bottom: var(--space-6);
+    }
+    @keyframes slideInRight {
+      from { opacity: 0; transform: translateX(24px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+
+    /* ===== FORMS ===== */
+    .form__group { margin-bottom: var(--space-5); }
+    .form__label {
+      display: block; font-size: var(--text-sm); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
+    }
+    .form__label-optional { font-weight: 400; color: var(--color-text-tertiary); }
+    .form__input {
+      width: 100%; padding: 0.875rem 1rem;
+      font-family: var(--font-body); font-size: var(--text-base);
+      color: var(--color-text-primary); background: var(--color-bg-page);
+      border: 1.5px solid var(--color-border); border-radius: var(--radius-md);
+      transition: border-color var(--dur-fast) ease,
+                  background-color var(--dur-fast) ease,
+                  box-shadow var(--dur-fast) ease;
+      min-height: 44px;
+    }
+    .form__input:focus {
+      outline: none; border-color: var(--color-border-focus);
+      background: var(--color-bg-card);
+      box-shadow: 0 0 0 3px rgba(45,90,69,0.15);
+    }
+    .form__input::placeholder { color: var(--color-text-tertiary); }
+    .form__input--error,
+    .form__group--error .form__input {
+      border-color: var(--color-danger); background: var(--color-danger-bg);
+    }
+    .form__error {
+      display: none; font-size: var(--text-xs);
+      color: var(--color-danger); margin-top: var(--space-1);
+    }
+    .form__group--error .form__error { display: block; }
+    .form__file-btn {
+      display: flex; align-items: center; gap: var(--space-2);
+      padding: 0.75rem 1rem; background: var(--color-bg-page);
+      border: 1.5px solid var(--color-border); border-radius: var(--radius-md);
+      cursor: pointer; font-family: var(--font-body); font-size: var(--text-sm);
+      color: var(--color-text-secondary); min-height: 44px; width: 100%;
+      transition: border-color var(--dur-fast) ease, background var(--dur-fast) ease;
+    }
+    .form__file-btn:hover {
+      border-color: var(--color-border-focus); background: var(--color-bg-card);
+    }
+    .form__file-btn--selected {
+      border-color: var(--color-border-focus);
+      background: rgba(45,90,69,0.05); color: var(--color-text-primary);
+    }
+    .form__file-input { /* sr-only via class */ }
+    .form__alt {
+      font-size: var(--text-sm); color: var(--color-text-tertiary);
+      text-align: center; margin-top: var(--space-3);
+    }
+    .form__alt a { color: var(--color-whatsapp-hover); font-weight: 600; }
+    .form__privacy {
+      display: flex; align-items: center; justify-content: center;
+      gap: var(--space-2); font-size: var(--text-xs);
+      color: var(--color-text-tertiary); margin-top: var(--space-3);
+    }
+    .form__textarea { resize: vertical; min-height: 80px; }
+    .form__row--2col { display: grid; grid-template-columns: 1fr; gap: var(--space-4); }
+    @media (min-width: 480px) { .form__row--2col { grid-template-columns: 1fr 1fr; } }
+    .form__success {
+      text-align: center; padding: var(--space-8) var(--space-4);
+    }
+    .form__success-icon {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--color-success-bg); color: var(--color-success);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto var(--space-4);
+    }
+    .form__success-title {
+      font-family: var(--font-display); font-size: var(--text-xl);
+      font-weight: 700; color: var(--color-text-primary); margin-bottom: var(--space-3);
+    }
+    .form__success-text { font-size: var(--text-sm); color: var(--color-text-secondary); }
+    .form__success-text a { color: var(--color-primary); font-weight: 600; }
+
+    /* ===== TRUST BAR ===== */
+    .trust-bar { background: var(--color-bg-dark); padding: var(--space-8) 0; }
+    .trust-bar__items {
+      display: flex; flex-direction: column; align-items: center;
+      gap: var(--space-6); text-align: center;
+    }
+    @media (min-width: 768px) {
+      .trust-bar__items { flex-direction: row; justify-content: center; gap: 0; }
+    }
+    .trust-bar__item {
+      display: flex; flex-direction: column; align-items: center;
+      gap: var(--space-2); padding: 0 var(--space-10);
+    }
+    .trust-bar__divider {
+      display: none; width: 1px; height: 40px;
+      background: rgba(250,250,247,0.15); flex-shrink: 0;
+    }
+    @media (min-width: 768px) { .trust-bar__divider { display: block; } }
+    .trust-bar__stat {
+      font-family: var(--font-display); font-size: var(--text-2xl);
+      font-weight: 700; color: var(--color-accent); line-height: 1;
+    }
+    .trust-bar__label { font-size: var(--text-sm); color: rgba(250,250,247,0.7); }
+
+    /* ===== MISTAKES SECTION ===== */
+    .mistakes__grid {
+      display: grid; grid-template-columns: 1fr; gap: var(--space-6);
+    }
+    @media (min-width: 640px) {
+      .mistakes__grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (min-width: 1024px) {
+      .mistakes__grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    }
+    .mistake-card {
+      background: var(--color-bg-card); border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      padding: var(--space-6);
+      position: relative;
+      transition: transform var(--dur-base) var(--ease-out-cubic),
+                  box-shadow var(--dur-base) ease;
+    }
+    .mistake-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(28,58,47,0.10);
+    }
+    .mistake-card--red    { border-left: 4px solid var(--color-danger); }
+    .mistake-card--amber  { border-left: 4px solid var(--color-warning-color); }
+    .mistake-card--yellow { border-left: 4px solid var(--color-caution-color); }
+    .mistake-card__severity {
+      display: flex; align-items: center; gap: var(--space-2);
+      margin-bottom: var(--space-3);
+    }
+    .mistake-card__dot {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    }
+    .mistake-card--red    .mistake-card__dot { background: var(--color-danger); }
+    .mistake-card--amber  .mistake-card__dot { background: var(--color-warning-color); }
+    .mistake-card--yellow .mistake-card__dot { background: var(--color-caution-color); }
+    .mistake-card__severity-label {
+      font-size: var(--text-xs); font-weight: 700;
+      text-transform: uppercase; letter-spacing: var(--tracking-wide);
+    }
+    .mistake-card--red    .mistake-card__severity-label { color: var(--color-danger); }
+    .mistake-card--amber  .mistake-card__severity-label { color: var(--color-warning-color); }
+    .mistake-card--yellow .mistake-card__severity-label { color: var(--color-caution-color); }
+    .mistake-card__title {
+      font-family: var(--font-body); font-size: var(--text-base); font-weight: 700;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
+    }
+    .mistake-card__text {
+      font-size: var(--text-sm); color: var(--color-text-secondary);
+      line-height: var(--leading-normal);
+    }
+    .mistakes__footer {
+      text-align: center; margin-top: var(--space-10);
+    }
+    .mistakes__footer p {
+      font-size: var(--text-base); color: var(--color-text-secondary);
+      margin-bottom: var(--space-5);
+    }
+
+    /* ===== PROCESS SECTION ===== */
+    .process__steps {
+      max-width: 600px; margin: 0 auto;
+      display: flex; flex-direction: column; gap: 0;
+    }
+    .process-step {
+      display: flex; gap: var(--space-6); align-items: flex-start;
+    }
+    .process-step__marker {
+      display: flex; flex-direction: column; align-items: center;
+      flex-shrink: 0; width: 48px;
+    }
+    .process-step__circle {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--color-primary); flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1.25rem;
+      font-weight: 700; color: var(--color-accent);
+      position: relative; z-index: 1;
+    }
+    .process-step__line {
+      width: 2px; flex: 1; min-height: 32px;
+      background: var(--color-border); margin-top: var(--space-2);
+    }
+    .process-step:last-child .process-step__line { display: none; }
+    .process-step__body {
+      padding-bottom: var(--space-10); flex: 1;
+    }
+    .process-step:last-child .process-step__body { padding-bottom: 0; }
+    .process-step__title {
+      font-family: var(--font-body); font-size: var(--text-lg);
+      font-weight: 600; color: var(--color-text-primary);
+      margin-bottom: var(--space-2); line-height: var(--leading-snug);
+      padding-top: var(--space-2);
+    }
+    .process-step__text {
+      font-size: var(--text-base); color: var(--color-text-secondary);
+      line-height: var(--leading-normal); margin-bottom: var(--space-3);
+    }
+    .process-step__link {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      font-size: var(--text-sm); font-weight: 600;
+      color: var(--color-whatsapp-hover); text-decoration: none;
+    }
+    .process-step__link:hover { text-decoration: underline; }
+    .process-step__quote {
+      border-left: 3px solid var(--color-accent); padding-left: var(--space-4);
+      margin-top: var(--space-3); font-family: var(--font-display);
+      font-size: var(--text-base); font-style: italic;
+      color: var(--color-text-secondary); line-height: var(--leading-normal);
+    }
+
+    /* ===== ABOUT SECTION ===== */
+    .about__grid {
+      display: grid; grid-template-columns: 1fr; gap: var(--space-12);
+      align-items: start;
+    }
+    @media (min-width: 768px) {
+      .about__grid { grid-template-columns: 300px 1fr; gap: var(--space-16); }
+    }
+    .about__photo-col { position: relative; }
+    .about__photo-placeholder {
+      width: 100%; max-width: 300px; aspect-ratio: 4/5;
+      background: var(--color-primary-light); border-radius: var(--radius-lg);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 4rem;
+      font-weight: 700; color: rgba(250,250,247,0.9);
+    }
+    .about__credential {
+      position: absolute; bottom: -1rem; right: -0.75rem;
+      background: var(--color-bg-card); border-radius: var(--radius-md);
+      box-shadow: var(--shadow-card); padding: var(--space-3) var(--space-4);
+      border-left: 4px solid var(--color-primary);
+      font-size: var(--text-xs); font-weight: 600;
+      color: var(--color-text-primary); white-space: nowrap;
+    }
+    .about__eyebrow {
+      font-size: var(--text-xs); font-weight: 700;
+      text-transform: uppercase; letter-spacing: var(--tracking-wide);
+      color: var(--color-accent); margin-bottom: var(--space-3); display: block;
+    }
+    .about__name {
+      font-family: var(--font-display); font-size: var(--text-2xl);
+      font-weight: 700; color: var(--color-text-primary);
+      line-height: var(--leading-snug); margin-bottom: var(--space-1);
+    }
+    .about__role {
+      font-size: var(--text-base); color: var(--color-text-tertiary);
+      margin-bottom: var(--space-6);
+    }
+    .about__quote {
+      border-left: 3px solid var(--color-accent);
+      padding-left: var(--space-5); margin-bottom: var(--space-5);
+      font-family: var(--font-display); font-style: italic;
+      font-size: var(--text-lg); color: var(--color-text-primary);
+      line-height: var(--leading-snug);
+    }
+    .about__body {
+      font-size: var(--text-base); color: var(--color-text-secondary);
+      line-height: var(--leading-normal); margin-bottom: var(--space-8);
+    }
+    .about__stats {
+      display: flex; flex-wrap: wrap; gap: var(--space-6);
+      padding-top: var(--space-6); border-top: 1px solid var(--color-border);
+    }
+    .about__stat {
+      display: flex; align-items: center; gap: var(--space-3);
+    }
+    .about__stat-icon {
+      width: 20px; height: 20px; flex-shrink: 0;
+      color: var(--color-accent);
+    }
+    .about__stat-value {
+      font-weight: 700; color: var(--color-text-primary);
+      font-size: var(--text-base);
+    }
+    .about__stat-label {
+      font-size: var(--text-sm); color: var(--color-text-tertiary);
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials__grid {
+      display: grid; grid-template-columns: 1fr; gap: var(--space-6);
+    }
+    @media (min-width: 640px) {
+      .testimonials__grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (min-width: 1024px) {
+      .testimonials__grid { grid-template-columns: 1fr 1fr 1fr; }
+    }
+    .testimonial-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10);
+      border-radius: var(--radius-lg); padding: var(--space-8);
+      display: flex; flex-direction: column;
+    }
+    .testimonial-card__stars {
+      display: flex; gap: var(--space-1); margin-bottom: var(--space-4);
+    }
+    .testimonial-card__stars svg { color: var(--color-accent); }
+    .testimonial-card__outcome {
+      display: flex; align-items: baseline; gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+    .testimonial-card__outcome-amount {
+      font-family: var(--font-display); font-size: var(--text-2xl);
+      font-weight: 700; color: var(--color-accent); line-height: 1;
+    }
+    .testimonial-card__outcome-label {
+      font-size: var(--text-sm); color: rgba(250,250,247,0.6);
+    }
+    .testimonial-card__quote {
+      font-size: var(--text-base); color: var(--color-text-inverse);
+      line-height: var(--leading-normal); margin-bottom: var(--space-6);
+      flex: 1;
+    }
+    .testimonial-card__footer {
+      display: flex; align-items: center; gap: var(--space-3); margin-top: auto;
+    }
+    .testimonial-card__avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--color-primary-muted); flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-body); font-size: 0.8rem; font-weight: 600;
+      color: var(--color-text-inverse);
+    }
+    .testimonial-card__name {
+      font-weight: 600; font-size: var(--text-sm); color: var(--color-text-inverse);
+    }
+    .testimonial-card__context {
+      font-size: var(--text-xs); color: rgba(250,250,247,0.6);
+    }
+
+    /* ===== FAQ ===== */
+    .faq-item__trigger {
+      display: flex; justify-content: space-between; align-items: center;
+      width: 100%; padding: 1.25rem 0;
+      font-size: var(--text-base); font-weight: 600;
+      font-family: var(--font-body); color: var(--color-text-primary);
+      background: none; border: none; border-bottom: 1px solid var(--color-border);
+      cursor: pointer; text-align: left; gap: 1rem; min-height: 56px;
+    }
+    .faq-item__trigger:hover { color: var(--color-primary); }
+    .faq-item__icon {
+      flex-shrink: 0;
+      transition: transform var(--dur-base) var(--ease-out-cubic);
+    }
+    .faq-item.is-open .faq-item__icon { transform: rotate(45deg); }
+    .faq-item__panel {
+      display: grid; grid-template-rows: 0fr;
+      transition: grid-template-rows 0.35s var(--ease-out-cubic);
+    }
+    .faq-item.is-open .faq-item__panel { grid-template-rows: 1fr; }
+    .faq-item__body { overflow: hidden; padding-top: 0; padding-bottom: 0;
+      transition: padding var(--dur-base) ease; }
+    .faq-item.is-open .faq-item__body {
+      padding-top: var(--space-4); padding-bottom: var(--space-6);
+    }
+    .faq-item__answer {
+      font-size: var(--text-base); color: var(--color-text-secondary);
+      line-height: var(--leading-normal);
+    }
+
+    /* ===== FINAL CTA / CONTACT ===== */
+    .contact__grid {
+      display: grid; grid-template-columns: 1fr; gap: var(--space-12); align-items: start;
+    }
+    @media (min-width: 768px) {
+      .contact__grid { grid-template-columns: 1fr 1.2fr; gap: var(--space-16); }
+    }
+    .contact__direct-title {
+      font-family: var(--font-body); font-size: var(--text-lg); font-weight: 700;
+      color: var(--color-text-primary); margin-bottom: var(--space-6);
+    }
+    .contact__options { display: flex; flex-direction: column; gap: var(--space-4); margin-bottom: var(--space-8); }
+    .contact__option {
+      display: flex; align-items: center; gap: var(--space-4);
+      text-decoration: none; padding: var(--space-4); border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border); background: var(--color-bg-card);
+      transition: border-color var(--dur-fast) ease, box-shadow var(--dur-fast) ease;
+    }
+    .contact__option:hover {
+      border-color: var(--color-primary-light);
+      box-shadow: var(--shadow-sm);
+    }
+    .contact__option-icon {
+      width: 44px; height: 44px; border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .contact__option-icon--phone { background: var(--color-primary); color: var(--color-text-inverse); }
+    .contact__option-icon--wa    { background: var(--color-whatsapp); color: #fff; }
+    .contact__option-icon--email { background: #4B6CB7; color: #fff; }
+    .contact__option-label {
+      font-size: var(--text-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: var(--tracking-wide); color: var(--color-text-tertiary);
+      margin-bottom: var(--space-1);
+    }
+    .contact__option-value {
+      font-size: var(--text-base); font-weight: 600; color: var(--color-text-primary);
+    }
+    .contact__reassurance {
+      font-size: var(--text-sm); color: var(--color-text-tertiary);
+      line-height: var(--leading-normal);
+    }
+    .contact__form-card {
+      background: var(--color-bg-card); border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-form); padding: var(--space-8);
+      position: relative; overflow: hidden;
+    }
+    .contact__form-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 4px; background: var(--color-primary);
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--color-bg-darkest); padding: var(--space-12) 0 var(--space-8);
+    }
+    .footer__inner {
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: flex-start; gap: var(--space-8); margin-bottom: var(--space-8);
+    }
+    .footer__logo {
+      font-family: var(--font-display); font-size: 1.375rem; font-weight: 700;
+      color: var(--color-text-inverse); text-decoration: none; letter-spacing: -0.01em;
+      display: block; margin-bottom: var(--space-2);
+    }
+    .footer__logo-accent { color: var(--color-accent); }
+    .footer__logo-tld    { color: rgba(250,250,247,0.5); font-weight: 600; }
+    .footer__tagline {
+      font-size: var(--text-sm); color: rgba(250,250,247,0.6);
+      margin-bottom: var(--space-2);
+    }
+    .footer__kvk {
+      font-size: var(--text-xs); color: rgba(250,250,247,0.4);
+    }
+    .footer__nav {
+      display: flex; flex-wrap: wrap; gap: var(--space-6);
+    }
+    .footer__nav-link {
+      font-size: var(--text-sm); color: rgba(250,250,247,0.7);
+      text-decoration: none;
+      transition: color var(--dur-fast) ease;
+    }
+    .footer__nav-link:hover { color: var(--color-text-inverse); }
+    .footer__bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: var(--space-6);
+      display: flex; flex-wrap: wrap; gap: var(--space-4);
+      justify-content: space-between; align-items: center;
+    }
+    .footer__copy {
+      font-size: var(--text-xs); color: rgba(250,250,247,0.5);
+    }
+    .footer__disclaimer {
+      font-size: var(--text-xs); color: rgba(250,250,247,0.4);
+      max-width: 56ch;
+    }
+
+    /* ===== MOBILE STICKY BAR ===== */
+    .mobile-sticky-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      display: flex;
+      background: white;
+      border-top: 1px solid var(--color-border);
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+      transform: translateY(100%);
+      transition: transform 0.5s var(--ease-out-cubic);
+    }
+    .mobile-sticky-bar.is-visible { transform: translateY(0); }
+    @media (min-width: 768px) { .mobile-sticky-bar { display: none; } }
+    .mobile-sticky-bar__btn {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: var(--space-4);
+      font-family: var(--font-body); font-size: var(--text-base); font-weight: 700;
+      text-decoration: none; min-height: 56px; border: none; cursor: pointer;
+    }
+    .mobile-sticky-bar__btn--phone {
+      background: var(--color-accent); color: var(--color-text-primary);
+    }
+    .mobile-sticky-bar__btn--whatsapp {
+      background: var(--color-whatsapp); color: #fff;
+    }
+    @media (max-width: 767px) { body { padding-bottom: 56px; } }
+
+    /* ===== SCROLL REVEAL ===== */
+    [data-reveal] {
+      opacity: 0; transform: translateY(20px);
+      transition:
+        opacity 0.6s ease calc(var(--stagger, 0) * 80ms),
+        transform 0.6s var(--ease-out-cubic) calc(var(--stagger, 0) * 80ms);
+    }
+    [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) {
+      [data-reveal] { opacity: 1; transform: none; transition: none; }
+      * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="site-header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="/" class="header__logo" aria-label="VSOvandaag.nl — homepage">
+        VSO<span class="header__logo-accent">vandaag</span><span class="header__logo-tld">.nl</span>
+      </a>
+      <div class="header__actions">
+        <a href="tel:+31612345678" class="header__phone" aria-label="Bel mr. Haphap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          <span class="header__phone-number">06-12 34 56 78<!-- PLACEHOLDER: real phone --></span>
+        </a>
+        <a href="https://wa.me/31612345678" class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener" aria-label="WhatsApp mr. Haphap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <!-- Left: Content -->
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+          mr. Mehtap Haphap&nbsp;&middot;&nbsp;Arbeidsrechtspecialist
+        </div>
+        <h1 class="hero__title">
+          Teken niet direct.<br>
+          <span class="hero__title-line2">Laat je VSO vandaag<br class="hero__title-br"> nog controleren.</span>
+        </h1>
+        <p class="hero__subtitle">
+          mr. Mehtap Haphap bekijkt je overeenkomst en vertelt je precies waar je staat&nbsp;&mdash; dezelfde dag nog.
+        </p>
+        <ul class="hero__benefits">
+          <li class="hero__benefit">
+            <svg class="hero__check" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="var(--color-accent-light)"/><path d="M8 12l3 3 5-5" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Dezelfde dag reactie&nbsp;&mdash; geen onzekerheid</span>
+          </li>
+          <li class="hero__benefit">
+            <svg class="hero__check" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="var(--color-accent-light)"/><path d="M8 12l3 3 5-5" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Gratis voor jou&nbsp;&mdash; werkgever betaalt</span>
+          </li>
+          <li class="hero__benefit">
+            <svg class="hero__check" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="var(--color-accent-light)"/><path d="M8 12l3 3 5-5" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Persoonlijk advies van een specialist</span>
+          </li>
+        </ul>
+        <div class="hero__contact-row">
+          <a href="tel:+31612345678" class="hero__contact-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            06-12 34 56 78<!-- PLACEHOLDER: real phone -->
+          </a>
+          <span class="hero__contact-or" aria-hidden="true">of</span>
+          <a href="https://wa.me/31612345678" class="hero__contact-link hero__contact-link--wa" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp direct
+          </a>
+        </div>
+        <p class="hero__urgency">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <strong>Bedenktijd:</strong>&nbsp;je hebt 14 dagen na ontvangst om te reageren.
+        </p>
+      </div>
+
+      <!-- Right: Form card -->
+      <div class="hero__form-wrapper" id="hero-form-region">
+        <div class="hero__form-card">
+          <h2 class="hero__form-title">Stuur je VSO op</h2>
+          <p class="hero__form-subtitle">Gratis en vrijblijvend &mdash; je hoort vandaag nog van ons.</p>
+          <form class="form" id="hero-form" action="#" method="POST" novalidate>
+            <!-- PLACEHOLDER: replace action with real endpoint -->
+            <div class="form__group">
+              <label class="form__label" for="h-naam">Naam</label>
+              <input class="form__input" type="text" id="h-naam" name="naam" placeholder="Je volledige naam" autocomplete="name" required aria-required="true">
+              <span class="form__error" id="h-naam-error" role="alert"></span>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="h-tel">Telefoonnummer</label>
+              <input class="form__input" type="tel" id="h-tel" name="telefoon" placeholder="06-XX XX XX XX" autocomplete="tel" required aria-required="true">
+              <span class="form__error" id="h-tel-error" role="alert"></span>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="h-vso">
+                VSO uploaden <span class="form__label-optional">(optioneel)</span>
+              </label>
+              <label class="form__file-btn" for="h-vso" id="h-vso-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg>
+                <span class="form__file-text">Bestand kiezen</span>
+              </label>
+              <input type="file" id="h-vso" name="vso" accept=".pdf,.doc,.docx" class="form__file-input sr-only" aria-label="VSO bestand uploaden">
+            </div>
+            <button type="submit" class="btn btn--accent btn--full btn--lg">
+              Verstuur &mdash; krijg vandaag nog reactie
+            </button>
+            <p class="form__alt">Of WhatsApp: <a href="https://wa.me/31612345678" target="_blank" rel="noopener">06-12 34 56 78</a><!-- PLACEHOLDER: real number --></p>
+            <p class="form__privacy">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              Je gegevens zijn veilig en worden nooit gedeeld.
+            </p>
+          </form>
+          <div class="form__success" id="hero-form-success" hidden aria-live="polite">
+            <div class="form__success-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 class="form__success-title">Ontvangen &mdash; bedankt!</h3>
+            <p class="form__success-text">mr. Haphap neemt vandaag nog contact met je op. Bij spoed: bel <a href="tel:+31612345678">06-12 34 56 78</a>.<!-- PLACEHOLDER: real phone --></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar__items">
+      <div class="trust-bar__item">
+        <span class="trust-bar__stat">95%</span>
+        <span class="trust-bar__label">van de overeenkomsten verbeterd</span>
+      </div>
+      <div class="trust-bar__divider" aria-hidden="true"></div>
+      <div class="trust-bar__item">
+        <span class="trust-bar__stat">Gratis</span>
+        <span class="trust-bar__label">werkgever betaalt de kosten</span>
+      </div>
+      <div class="trust-bar__divider" aria-hidden="true"></div>
+      <div class="trust-bar__item">
+        <span class="trust-bar__stat">14 dagen</span>
+        <span class="trust-bar__label">bedenktijd &mdash; ook na tekenen</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MISTAKES SECTION ===== -->
+<section class="section section--cream" id="fouten">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow">Waar ik op let</span>
+      <h2 class="section__title">5 fouten die bijna elke VSO bevat</h2>
+      <p class="section__subtitle">De meeste werkgevers gebruiken standaardmodellen, opgesteld in h&uacute;n voordeel. Dit zijn de valkuilen die ik dagelijks tegenkom.</p>
+    </div>
+    <div class="mistakes__grid">
+      <div class="mistake-card mistake-card--red" data-reveal="0">
+        <div class="mistake-card__severity">
+          <span class="mistake-card__dot" aria-hidden="true"></span>
+          <span class="mistake-card__severity-label">WW-risico</span>
+        </div>
+        <h3 class="mistake-card__title">WW-uitkering niet veiliggesteld</h3>
+        <p class="mistake-card__text">Als de formulering niet precies klopt, kan het UWV je uitkering weigeren of maanden uitstellen. Dit is de fout met de grootste impact.</p>
+      </div>
+      <div class="mistake-card mistake-card--red" data-reveal="1">
+        <div class="mistake-card__severity">
+          <span class="mistake-card__dot" aria-hidden="true"></span>
+          <span class="mistake-card__severity-label">Financieel risico</span>
+        </div>
+        <h3 class="mistake-card__title">Transitievergoeding te laag</h3>
+        <p class="mistake-card__text">Bonussen, toeslagen en vakantiegeld worden vaak &lsquo;vergeten&rsquo; in de berekening &mdash; soms kost dit je duizenden euro&rsquo;s.</p>
+      </div>
+      <div class="mistake-card mistake-card--amber" data-reveal="2">
+        <div class="mistake-card__severity">
+          <span class="mistake-card__dot" aria-hidden="true"></span>
+          <span class="mistake-card__severity-label">WW-gat risico</span>
+        </div>
+        <h3 class="mistake-card__title">Verkeerde opzegtermijn</h3>
+        <p class="mistake-card__text">Een fout in de opzegtermijn leidt tot weken zonder inkomen tussen je laatste werkdag en het begin van je WW.</p>
+      </div>
+      <div class="mistake-card mistake-card--amber" data-reveal="3">
+        <div class="mistake-card__severity">
+          <span class="mistake-card__dot" aria-hidden="true"></span>
+          <span class="mistake-card__severity-label">Juridisch nadeel</span>
+        </div>
+        <h3 class="mistake-card__title">Concurrentiebeding blijft staan</h3>
+        <p class="mistake-card__text">Werkgevers laten dit er standaard in staan &mdash; maar ze schrappen het bijna altijd als je er om vraagt. Mis deze kans niet.</p>
+      </div>
+      <div class="mistake-card mistake-card--yellow" data-reveal="4">
+        <div class="mistake-card__severity">
+          <span class="mistake-card__dot" aria-hidden="true"></span>
+          <span class="mistake-card__severity-label">Vergeten rechten</span>
+        </div>
+        <h3 class="mistake-card__title">Vakantiedagen of bonus vergeten</h3>
+        <p class="mistake-card__text">Alles wat niet in de VSO staat, ben je kwijt. Finale kwijting werkt twee kanten op &mdash; en werkgevers weten dat.</p>
+      </div>
+    </div>
+    <div class="mistakes__footer">
+      <p>Ik check dit allemaal voor je &mdash; gratis en vrijblijvend.</p>
+      <a href="#hero-form-region" class="btn btn--accent btn--lg">Stuur je VSO op</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS SECTION ===== -->
+<section class="section section--white" id="werkwijze">
+  <div class="container">
+    <div class="section__header section__header--center">
+      <span class="section__eyebrow">Zo werkt het</span>
+      <h2 class="section__title">Van VSO ontvangen tot duidelijkheid</h2>
+    </div>
+    <div class="process__steps">
+      <div class="process-step" data-reveal="0">
+        <div class="process-step__marker">
+          <div class="process-step__circle" aria-hidden="true">1</div>
+          <div class="process-step__line" aria-hidden="true"></div>
+        </div>
+        <div class="process-step__body">
+          <h3 class="process-step__title">Stuur je VSO op</h3>
+          <p class="process-step__text">Via WhatsApp of het formulier hierboven. Duurt 30 seconden &mdash; ook als je de VSO alleen hebt doorgestuurd op je telefoon.</p>
+          <a href="https://wa.me/31612345678" class="process-step__link" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Stuur via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="process-step" data-reveal="1">
+        <div class="process-step__marker">
+          <div class="process-step__circle" aria-hidden="true">2</div>
+          <div class="process-step__line" aria-hidden="true"></div>
+        </div>
+        <div class="process-step__body">
+          <h3 class="process-step__title">Ik lees alles door en bel je dezelfde dag</h3>
+          <p class="process-step__text">Ik ga door je VSO heen en bel je persoonlijk &mdash; ook als het slecht nieuws is. Geen formulierreactie, geen assistent. Jij spreekt direct met mij.</p>
+          <blockquote class="process-step__quote">
+            &ldquo;Je verdient een eerlijk antwoord, niet een juridisch antwoord.&rdquo;
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="process-step" data-reveal="2">
+        <div class="process-step__marker">
+          <div class="process-step__circle" aria-hidden="true">3</div>
+          <div class="process-step__line" aria-hidden="true"></div>
+        </div>
+        <div class="process-step__body">
+          <h3 class="process-step__title">Jij beslist &mdash; ik adviseer</h3>
+          <p class="process-step__text">Wil je dat ik namens jou onderhandel met je werkgever? Of ga je zelf het gesprek aan, gewapend met mijn advies? Jouw keuze, jouw tempo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="section section--cream" id="over-mij">
+  <div class="container">
+    <div class="about__grid">
+      <!-- Photo column -->
+      <div class="about__photo-col">
+        <!-- PLACEHOLDER: Replace with <img src="..." alt="mr. Mehtap Haphap, arbeidsrechtspecialist"> when photo available -->
+        <div class="about__photo-placeholder" aria-hidden="true">MH</div>
+        <div class="about__credential">mr. &middot; Meester in de rechten</div>
+      </div>
+      <!-- Content column -->
+      <div class="about__content-col">
+        <span class="about__eyebrow">Over mr. Haphap</span>
+        <h2 class="about__name">mr. Mehtap Haphap</h2>
+        <p class="about__role">Arbeidsrechtspecialist</p>
+        <blockquote class="about__quote">
+          &ldquo;Ik snap hoe overweldigend het is om een vaststellingsovereenkomst te krijgen. Je voelt je onder druk gezet, je weet niet wat normaal is, en je wilt gewoon duidelijkheid.&rdquo;
+        </blockquote>
+        <p class="about__body">
+          Daarom werk ik snel en persoonlijk. Geen juridisch jargon, geen eindeloze procedures. Je spreekt direct met mij &mdash; en je weet dezelfde dag waar je aan toe bent.
+        </p>
+        <div class="about__stats">
+          <div class="about__stat">
+            <svg class="about__stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="var(--color-accent-light)"/><path d="M8 12l3 3 5-5" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="about__stat-value">500+<!-- PLACEHOLDER: real number --></div>
+              <div class="about__stat-label">VSO&rsquo;s beoordeeld</div>
+            </div>
+          </div>
+          <div class="about__stat">
+            <svg class="about__stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="var(--color-accent-light)"/><path d="M8 12l3 3 5-5" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="about__stat-value">95%</div>
+              <div class="about__stat-label">verbeterd resultaat</div>
+            </div>
+          </div>
+          <div class="about__stat">
+            <svg class="about__stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="var(--color-accent-light)"/><path d="M8 12l3 3 5-5" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="about__stat-value">Zelfde dag</div>
+              <div class="about__stat-label">persoonlijk advies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section section--dark" id="ervaringen">
+  <div class="container">
+    <div class="section__header section__header--center">
+      <span class="section__eyebrow">Ervaringen</span>
+      <h2 class="section__title">Wat andere werknemers zeggen</h2>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card" data-reveal="0">
+        <div class="testimonial-card__stars" aria-label="5 sterren">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="testimonial-card__outcome">
+          <span class="testimonial-card__outcome-amount">+&euro;8.000</span>
+          <span class="testimonial-card__outcome-label">boven het eerste bod</span>
+        </div>
+        <blockquote class="testimonial-card__quote">
+          &ldquo;Ik was in paniek toen ik de VSO kreeg. Mehtap nam direct de tijd om alles uit te leggen. Uiteindelijk &euro;8.000 meer gekregen dan het eerste bod.&rdquo;
+        </blockquote>
+        <div class="testimonial-card__footer">
+          <div class="testimonial-card__avatar" aria-hidden="true">JV</div>
+          <div>
+            <div class="testimonial-card__name">J. de Vries</div>
+            <div class="testimonial-card__context">Marketing Manager, 8 jaar in dienst &middot; Amsterdam<!-- PLACEHOLDER: real details --></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-reveal="1">
+        <div class="testimonial-card__stars" aria-label="5 sterren">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="testimonial-card__outcome">
+          <span class="testimonial-card__outcome-amount">Zelfde dag</span>
+          <span class="testimonial-card__outcome-label">duidelijkheid</span>
+        </div>
+        <blockquote class="testimonial-card__quote">
+          &ldquo;Heel fijn dat je gewoon kunt bellen. Geen callcenter, geen wachttijden. Binnen een dag wist ik waar ik aan toe was.&rdquo;
+        </blockquote>
+        <div class="testimonial-card__footer">
+          <div class="testimonial-card__avatar" aria-hidden="true">SB</div>
+          <div>
+            <div class="testimonial-card__name">S. Bakker</div>
+            <div class="testimonial-card__context">Projectleider, 5 jaar in dienst &middot; Utrecht<!-- PLACEHOLDER: real details --></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-reveal="2">
+        <div class="testimonial-card__stars" aria-label="5 sterren">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="testimonial-card__outcome">
+          <span class="testimonial-card__outcome-amount">Concurrentiebeding</span>
+          <span class="testimonial-card__outcome-label">volledig vervallen</span>
+        </div>
+        <blockquote class="testimonial-card__quote">
+          &ldquo;Dankzij VSOvandaag heb ik mijn concurrentiebeding laten vervallen &eacute;n een hoger bedrag gekregen. Dat had ik zelf nooit geweten.&rdquo;
+        </blockquote>
+        <div class="testimonial-card__footer">
+          <div class="testimonial-card__avatar" aria-hidden="true">MJ</div>
+          <div>
+            <div class="testimonial-card__name">M. Jansen</div>
+            <div class="testimonial-card__context">HR Adviseur, 11 jaar in dienst &middot; Rotterdam<!-- PLACEHOLDER: real details --></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section section--cream" id="faq">
+  <div class="container container--narrow">
+    <div class="section__header section__header--center">
+      <span class="section__eyebrow">Veelgestelde vragen</span>
+      <h2 class="section__title">Vragen waar bijna iedereen mee zit</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          Wat kost het om mijn VSO te laten controleren?
+          <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-item__panel" role="region">
+          <div class="faq-item__body">
+            <p class="faq-item__answer">Voor jou is het gratis. In de meeste VSO&rsquo;s staat een budget van &euro;500&ndash;&euro;750 voor juridische kosten. Dat betaalt je werkgever. Staat het er niet in? Dan onderhandelen we dat erbij.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          Ik heb al getekend. Kan ik nog iets doen?
+          <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-item__panel" role="region">
+          <div class="faq-item__body">
+            <p class="faq-item__answer">Ja &mdash; je hebt een wettelijke bedenktijd van 14 dagen na ondertekening. Staat dit niet vermeld in je VSO? Dan is het zelfs 21 dagen. Neem zo snel mogelijk contact op &mdash; er is bijna altijd nog iets mogelijk.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          Mijn werkgever zegt dat het niet onderhandelbaar is.
+          <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-item__panel" role="region">
+          <div class="faq-item__body">
+            <p class="faq-item__answer">Dat zeggen ze bijna altijd. In de praktijk is er bijna altijd ruimte &mdash; op de vergoeding, het concurrentiebeding, de opzegtermijn, of het juridische kostenbudget. Ik weet hoe het gesprek gevoerd moet worden.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          Heb ik recht op WW als ik de VSO teken?
+          <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-item__panel" role="region">
+          <div class="faq-item__body">
+            <p class="faq-item__answer">Ja, mits de overeenkomst voldoet aan de UWV-eisen. Het initiatief moet bij de werkgever liggen en er moet een geldige reden in staan. Dit is het eerste wat ik controleer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          Hoeveel ontslagvergoeding kan ik krijgen?
+          <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-item__panel" role="region">
+          <div class="faq-item__body">
+            <p class="faq-item__answer">Wettelijk heb je recht op de transitievergoeding: &frac13; maandsalaris per dienstjaar (max &euro;102.000 in 2026). In onderhandelingen is vaak meer mogelijk &mdash; afhankelijk van je situatie en de positie van je werkgever.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__trigger" aria-expanded="false">
+          Blijft dit vertrouwelijk &mdash; weet mijn werkgever dat ik advies heb ingewonnen?
+          <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-item__panel" role="region">
+          <div class="faq-item__body">
+            <p class="faq-item__answer">Absoluut. Alles valt onder mijn geheimhoudingsplicht. Je werkgever komt er niet achter &mdash; tenzij jij dat zelf wilt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA / CONTACT ===== -->
+<section class="section section--white" id="contact">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__eyebrow">Neem contact op</span>
+      <h2 class="section__title">Zet vandaag nog de eerste stap</h2>
+      <p class="section__subtitle">Stuur je VSO op en krijg dezelfde dag persoonlijk advies. Gratis en vrijblijvend &mdash; de werkgever betaalt.</p>
+    </div>
+    <div class="contact__grid">
+      <!-- Left: direct contact -->
+      <div class="contact__direct">
+        <h3 class="contact__direct-title">Liever direct contact?</h3>
+        <div class="contact__options">
+          <a href="tel:+31612345678" class="contact__option">
+            <div class="contact__option-icon contact__option-icon--phone" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact__option-label">Bel direct</div>
+              <div class="contact__option-value">06-12 34 56 78<!-- PLACEHOLDER: real phone --></div>
+            </div>
+          </a>
+          <a href="https://wa.me/31612345678" class="contact__option" target="_blank" rel="noopener">
+            <div class="contact__option-icon contact__option-icon--wa" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <div class="contact__option-label">WhatsApp</div>
+              <div class="contact__option-value">Stuur direct een bericht</div>
+            </div>
+          </a>
+          <a href="mailto:info@vsovandaag.nl" class="contact__option">
+            <!-- PLACEHOLDER: real email address -->
+            <div class="contact__option-icon contact__option-icon--email" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact__option-label">E-mail</div>
+              <div class="contact__option-value">info@vsovandaag.nl<!-- PLACEHOLDER: real email --></div>
+            </div>
+          </a>
+        </div>
+        <p class="contact__reassurance">Reactie binnen dezelfde werkdag. Weekend ontvangen? Dan maandagochtend.</p>
+      </div>
+
+      <!-- Right: full form -->
+      <div class="contact__form-card">
+        <form class="form" id="contact-form" action="#" method="POST" novalidate>
+          <!-- PLACEHOLDER: replace action with real endpoint -->
+          <div class="form__row--2col">
+            <div class="form__group">
+              <label class="form__label" for="c-naam">Naam</label>
+              <input class="form__input" type="text" id="c-naam" name="naam" placeholder="Je naam" autocomplete="name" required aria-required="true">
+              <span class="form__error" id="c-naam-error" role="alert"></span>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="c-tel">Telefoon</label>
+              <input class="form__input" type="tel" id="c-tel" name="telefoon" placeholder="06-XX XX XX XX" autocomplete="tel" required aria-required="true">
+              <span class="form__error" id="c-tel-error" role="alert"></span>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="c-email">E-mailadres</label>
+            <input class="form__input" type="email" id="c-email" name="email" placeholder="je@email.nl" autocomplete="email" required aria-required="true">
+            <span class="form__error" id="c-email-error" role="alert"></span>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="c-vso">
+              VSO uploaden <span class="form__label-optional">(optioneel)</span>
+            </label>
+            <label class="form__file-btn" for="c-vso" id="c-vso-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg>
+              <span class="form__file-text">Bestand kiezen</span>
+            </label>
+            <input type="file" id="c-vso" name="vso" accept=".pdf,.doc,.docx" class="form__file-input sr-only" aria-label="VSO bestand uploaden">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="c-toelichting">
+              Toelichting <span class="form__label-optional">(optioneel)</span>
+            </label>
+            <textarea class="form__input form__textarea" id="c-toelichting" name="toelichting" rows="3" placeholder="Korte beschrijving van je situatie..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--accent btn--full btn--lg">
+            Verstuur &mdash; krijg vandaag nog reactie
+          </button>
+          <p class="form__privacy">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            Je gegevens zijn veilig en worden nooit gedeeld.
+          </p>
+        </form>
+        <div class="form__success" id="contact-form-success" hidden aria-live="polite">
+          <div class="form__success-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 class="form__success-title">Ontvangen &mdash; bedankt!</h3>
+          <p class="form__success-text">mr. Haphap neemt vandaag nog contact met je op. Bij spoed: bel <a href="tel:+31612345678">06-12 34 56 78</a>.<!-- PLACEHOLDER: real phone --></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <a href="/" class="footer__logo" aria-label="VSOvandaag.nl — homepage">
+          VSO<span class="footer__logo-accent">vandaag</span><span class="footer__logo-tld">.nl</span>
+        </a>
+        <p class="footer__tagline">mr. Mehtap Haphap &mdash; Arbeidsrechtspecialist</p>
+        <p class="footer__kvk">KvK: <!-- PLACEHOLDER: KvK-nummer --></p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigatie">
+        <a href="/privacybeleid" class="footer__nav-link">Privacybeleid</a>
+        <a href="/algemene-voorwaarden" class="footer__nav-link">Algemene voorwaarden</a>
+        <a href="#contact" class="footer__nav-link">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 VSOvandaag.nl &mdash; mr. Mehtap Haphap. Alle rechten voorbehouden.</p>
+      <p class="footer__disclaimer">Deze website geeft algemene informatie over arbeidsrecht. Het is geen juridisch advies.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MOBILE STICKY BAR ===== -->
+<div class="mobile-sticky-bar" id="mobile-sticky-bar" role="region" aria-label="Snel contact">
+  <a href="tel:+31612345678" class="mobile-sticky-bar__btn mobile-sticky-bar__btn--phone">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+    Bel nu
+  </a>
+  <a href="https://wa.me/31612345678" class="mobile-sticky-bar__btn mobile-sticky-bar__btn--whatsapp" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  // 1. Header scroll state
+  var header = document.getElementById('site-header');
+  var headerScrolled = false;
+  function updateHeader() {
+    var should = window.scrollY > 20;
+    if (should !== headerScrolled) {
+      headerScrolled = should;
+      header.classList.toggle('header--scrolled', headerScrolled);
+    }
+  }
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
+
+  // 2. Mobile sticky bar slide-up
+  var stickyBar = document.getElementById('mobile-sticky-bar');
+  if (stickyBar) {
+    setTimeout(function() { stickyBar.classList.add('is-visible'); }, 500);
+  }
+
+  // 3. FAQ Accordion
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(item) {
+    var trigger = item.querySelector('.faq-item__trigger');
+    if (!trigger) return;
+    trigger.addEventListener('click', function() {
+      var isOpen = item.classList.contains('is-open');
+      faqItems.forEach(function(i) {
+        i.classList.remove('is-open');
+        var t = i.querySelector('.faq-item__trigger');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // 4. Scroll reveal with IntersectionObserver
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  revealEls.forEach(function(el) {
+    var idx = parseInt(el.getAttribute('data-reveal'), 10) || 0;
+    el.style.setProperty('--stagger', idx);
+  });
+  if ('IntersectionObserver' in window) {
+    var revealObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    revealEls.forEach(function(el) { revealObs.observe(el); });
+  } else {
+    revealEls.forEach(function(el) { el.classList.add('is-visible'); });
+  }
+
+  // 5. Form handling
+  function setupForm(formId, successId) {
+    var form = document.getElementById(formId);
+    var successEl = document.getElementById(successId);
+    if (!form || !successEl) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var required = form.querySelectorAll('[required]');
+      var valid = true;
+      required.forEach(function(field) {
+        var group = field.closest('.form__group');
+        var errorEl = group ? group.querySelector('.form__error') : null;
+        if (!field.value.trim()) {
+          valid = false;
+          if (group) group.classList.add('form__group--error');
+          field.setAttribute('aria-invalid', 'true');
+          if (errorEl) errorEl.textContent = 'Dit veld is verplicht.';
+        } else {
+          if (group) group.classList.remove('form__group--error');
+          field.removeAttribute('aria-invalid');
+          if (errorEl) errorEl.textContent = '';
+        }
+      });
+      if (!valid) {
+        var first = form.querySelector('[aria-invalid="true"]');
+        if (first) first.focus();
+        return;
+      }
+      var submitBtn = form.querySelector('[type="submit"]');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Verzenden...';
+      }
+      // PLACEHOLDER: Replace setTimeout with real fetch/XHR form submission
+      setTimeout(function() {
+        form.hidden = true;
+        successEl.hidden = false;
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'conversion', { send_to: 'PLACEHOLDER_CONVERSION_ID' });
+          gtag('event', 'form_submit', { form_id: formId });
+        }
+      }, 800);
+    });
+
+    form.querySelectorAll('.form__input').forEach(function(input) {
+      input.addEventListener('blur', function() {
+        if (input.hasAttribute('required') && input.value.trim()) {
+          var group = input.closest('.form__group');
+          if (group) {
+            group.classList.remove('form__group--error');
+            var errorEl = group.querySelector('.form__error');
+            if (errorEl) errorEl.textContent = '';
+          }
+          input.removeAttribute('aria-invalid');
+        }
+      });
+    });
+  }
+  setupForm('hero-form', 'hero-form-success');
+  setupForm('contact-form', 'contact-form-success');
+
+  // 6. File upload feedback
+  document.querySelectorAll('.form__file-input').forEach(function(input) {
+    input.addEventListener('change', function() {
+      var file = input.files && input.files[0];
+      var group = input.closest('.form__group');
+      var btn = group && group.querySelector('.form__file-btn');
+      var label = btn && btn.querySelector('.form__file-text');
+      if (file && label) {
+        var name = file.name.length > 32 ? file.name.substring(0, 29) + '...' : file.name;
+        label.textContent = name;
+        if (btn) btn.classList.add('form__file-btn--selected');
+      }
+    });
+  });
+
+  // 7. Click tracking
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'click', { event_category: 'contact', event_label: 'phone_click' });
+      }
+    });
+  });
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'click', { event_category: 'contact', event_label: 'whatsapp_click' });
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
