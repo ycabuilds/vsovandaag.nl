@@ -308,6 +308,14 @@
       font-size: var(--text-sm); color: var(--color-text-tertiary);
       margin-bottom: var(--space-6);
     }
+    .hero__form-reassurance {
+      display: flex; flex-wrap: wrap; gap: var(--space-3);
+      margin-bottom: var(--space-5);
+    }
+    .hero__form-reassurance span {
+      font-size: var(--text-xs); font-weight: 600;
+      color: var(--color-primary-muted);
+    }
     @keyframes slideInRight {
       from { opacity: 0; transform: translateX(24px); }
       to   { opacity: 1; transform: translateX(0); }
@@ -888,6 +896,11 @@
         <div class="hero__form-card">
           <h2 class="hero__form-title">Stuur je VSO op</h2>
           <p class="hero__form-subtitle">Gratis en vrijblijvend &mdash; je hoort vandaag nog van ons.</p>
+          <div class="hero__form-reassurance">
+            <span>✓ Geen verplichting</span>
+            <span>✓ Werkgever hoort niets</span>
+            <span>✓ Gratis en vrijblijvend</span>
+          </div>
           <form class="form" id="hero-form" action="#" method="POST" novalidate>
             <!-- PLACEHOLDER: replace action with real endpoint -->
             <div class="form__group">
