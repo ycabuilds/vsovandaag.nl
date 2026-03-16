@@ -475,9 +475,15 @@
     .mistakes__footer {
       text-align: center; margin-top: var(--space-10);
     }
-    .mistakes__footer p {
+    .mistakes__footer p:not(.mistakes__urgency) {
       font-size: var(--text-base); color: var(--color-text-secondary);
       margin-bottom: var(--space-5);
+    }
+    .mistakes__urgency {
+      font-size: var(--text-sm);
+      color: var(--color-text-tertiary);
+      margin-top: var(--space-3);
+      text-align: center;
     }
 
     /* ===== PROCESS SECTION ===== */
@@ -1020,8 +1026,11 @@
       </div>
     </div>
     <div class="mistakes__footer">
-      <p>Ik check dit allemaal voor je &mdash; gratis en vrijblijvend.</p>
+      <p>Stuur je VSO op, ik vertel je vandaag nog hoeveel er nog in zit.</p>
       <a href="#hero-form-region" class="btn btn--accent btn--lg">Stuur je VSO op</a>
+      <p class="mistakes__urgency">
+        Je 14-dagenklok loopt al. Elke dag wachten verkleint je onderhandelingsruimte.
+      </p>
     </div>
   </div>
 </section>
