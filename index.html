@@ -300,6 +300,21 @@
       content: ''; position: absolute; top: 0; left: 0; right: 0;
       height: 4px; background: var(--color-primary);
     }
+    .deadline-calc { margin-bottom: var(--space-5); }
+    .deadline-calc__label {
+      display: block; font-size: var(--text-sm); font-weight: 600;
+      color: var(--color-text-primary); margin-bottom: var(--space-2);
+    }
+    .deadline-calc__row {
+      display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap;
+    }
+    .deadline-calc__input { flex: 1; min-width: 160px; }
+    .deadline-calc__result {
+      font-size: var(--text-sm); font-weight: 700; white-space: nowrap;
+    }
+    .deadline-calc__result--urgent { color: var(--color-danger); }
+    .deadline-calc__result--warning { color: var(--color-warning-color); }
+    .deadline-calc__result--safe { color: var(--color-success); }
     .hero__form-title {
       font-family: var(--font-display); font-size: 1.375rem; font-weight: 700;
       color: var(--color-text-primary); margin-bottom: var(--space-1);
@@ -904,6 +919,16 @@
         <div class="hero__form-card">
           <h2 class="hero__form-title">Stuur je VSO op</h2>
           <p class="hero__form-subtitle">Gratis en vrijblijvend &mdash; je hoort vandaag nog van ons.</p>
+          <div class="deadline-calc" id="deadline-calc">
+            <label class="deadline-calc__label" for="vso-date">
+              Wanneer heb je de VSO ontvangen?
+            </label>
+            <div class="deadline-calc__row">
+              <input type="date" id="vso-date" class="deadline-calc__input form__input"
+                     aria-describedby="deadline-result">
+              <span class="deadline-calc__result" id="deadline-result" aria-live="polite"></span>
+            </div>
+          </div>
           <div class="hero__form-reassurance">
             <span>✓ Geen verplichting</span>
             <span>✓ Werkgever hoort niets</span>
@@ -1507,7 +1532,36 @@
     revealEls.forEach(function(el) { el.classList.add('is-visible'); });
   }
 
-  // 5. Form handling
+  // 5. Deadline calculator
+  var vsoDateInput = document.getElementById('vso-date');
+  var deadlineResult = document.getElementById('deadline-result');
+  if (vsoDateInput && deadlineResult) {
+    var todayStr = new Date().toISOString().split('T')[0];
+    vsoDateInput.max = todayStr;
+    vsoDateInput.addEventListener('change', function() {
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+      var received = new Date(this.value);
+      var deadline = new Date(received);
+      deadline.setDate(deadline.getDate() + 14);
+      var daysLeft = Math.ceil((deadline - today) / (1000 * 60 * 60 * 24));
+      if (daysLeft <= 0) {
+        deadlineResult.innerHTML = 'Deadline verstreken, <a href="tel:+31[REAL NUMBER]" style="color:inherit;text-decoration:underline;">bel nu direct</a>';
+        deadlineResult.className = 'deadline-calc__result deadline-calc__result--urgent';
+      } else if (daysLeft <= 3) {
+        deadlineResult.textContent = 'Nog ' + daysLeft + (daysLeft === 1 ? ' dag' : ' dagen') + ', handel vandaag';
+        deadlineResult.className = 'deadline-calc__result deadline-calc__result--urgent';
+      } else if (daysLeft <= 7) {
+        deadlineResult.textContent = 'Nog ' + daysLeft + ' dagen, wacht niet te lang';
+        deadlineResult.className = 'deadline-calc__result deadline-calc__result--warning';
+      } else {
+        deadlineResult.textContent = 'Nog ' + daysLeft + ' dagen';
+        deadlineResult.className = 'deadline-calc__result deadline-calc__result--safe';
+      }
+    });
+  }
+
+  // 6. Form handling
   function setupForm(formId, successId) {
     var form = document.getElementById(formId);
     var successEl = document.getElementById(successId);
